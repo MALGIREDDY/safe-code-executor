@@ -34,6 +34,27 @@ cd safe-code-executor</pre>
 
 <hr>
 
+<hr>
+
+<div class="section">
+<h2>  Project Structure</h2>
+
+<pre>
+safe-executor/
+│
+├── app.py                # Flask API backend, runs Docker commands
+├── index.html            # Front-end UI with CodeMirror editor
+├── README.html           # Documentation (HTML version)
+│
+├── venv/                 # Python virtual environment (ignored in Git)
+│
+└── safe-executor-temp/   # Temporary folder where code files are stored before execution
+</pre>
+
+<p>This structure keeps the backend, frontend, and temporary execution files organized and easy to maintain.</p>
+</div>
+
+
 <div class="section">
 <h2> 2. Testing Normal Code Execution (with real outputs)</h2>
 
