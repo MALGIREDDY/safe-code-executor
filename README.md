@@ -1,4 +1,4 @@
-<h1>sSafe Code Executor</h1>
+<h1>Safe Code Executor</h1>
 <p>A secure sandbox system that runs <strong>Python</strong> and <strong>JavaScript (Node.js)</strong> inside Docker containers with:</p>
 
 <ul>
@@ -115,7 +115,7 @@ cd safe-code-executor</pre>
 <div class="section">
 <h2> 4. JavaScript Support</h2>
 
-<h3>✔ Test — Node.js console.log</h3>
+<h3> Test — Node.js console.log</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST `
 -ContentType "application/json" `
 -Body '{"language":"javascript","code":"console.log(2+2);"}').output</pre>
