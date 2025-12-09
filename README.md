@@ -44,7 +44,7 @@ safe-executor/
 │
 ├── app.py                # Flask API backend, runs Docker commands
 ├── index.html            # Front-end UI with CodeMirror editor
-├── README.html           # Documentation (HTML version)
+├── README.md             # Documentation (HTML version)
 │
 ├── venv/                 # Python virtual environment (ignored in Git)
 │
