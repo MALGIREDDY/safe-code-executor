@@ -32,7 +32,7 @@ cd safe-code-executor</pre>
 <pre>* Running on http://127.0.0.1:5000</pre>
 </div>
 ### server output
-![UI Screenshot](screenshots/safe code server output.png)
+![UI Screenshot](screenshots/screenshot-1.png)
 
 <hr>
 
@@ -68,7 +68,7 @@ safe-executor/
 <pre>Hello World</pre>
 
 ### screenshot 
-![Output Screenshot](screenshots/safe-code-hello-world.png)
+![Output Screenshot](screenshots/screenshot-2.png)
 
 <h3> Test 2 — Python Math</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST -ContentType "application/json" `
@@ -78,7 +78,7 @@ safe-executor/
 <pre>8</pre>
 
 ### Output screenshot
-![Output Screenshot](screenshots/safe code math execution.png)
+![Output Screenshot](screenshots/screenshot-3.png)
 
 <h3> Test 3 — Python Loop</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST -ContentType "application/json" `
@@ -93,7 +93,7 @@ safe-executor/
 </div>
 
 ### Output screenshot
-![Output Screenshot](screenshots/safe code loop output.png)
+![Output Screenshot](screenshots/screenshot-4.png)
 
 <hr>
 
@@ -109,7 +109,7 @@ safe-executor/
 <pre>Execution timed out after 10 seconds</pre>
 
 ### Output screenshot
-![Output Screenshot](screenshots/safe code safety exec.png)
+![Output Screenshot](screenshots/screenshot-5.png)
 
 <h3> Memory Bomb Attack</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST `
@@ -126,6 +126,10 @@ safe-executor/
 
 <b>Expected:</b>
 <pre>ModuleNotFoundError: No module named 'requests'</pre>
+
+### Output screenshot
+![Output Screenshot](screenshots/screenshot-7.png)
+
 
 <h3> Reading /etc/passwd (allowed inside container)</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST `
@@ -146,7 +150,7 @@ safe-executor/
 </div>
 
 ### Output screenshots
-![Output Screenshot](screenshots/safe code exec os error.png)
+![Output Screenshot](screenshots/screenshot-9.png)
 
 <hr>
 
