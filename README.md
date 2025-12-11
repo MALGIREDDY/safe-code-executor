@@ -120,6 +120,9 @@ safe-executor/
 <b>Expected:</b>
 <pre>(No output — container killed due to memory limit)</pre>
 
+### Output screenshot
+![Output Screenshot](screenshots/screenshot-6.png)
+
 <h3> Network Access Block</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST `
 -ContentType "application/json" `
@@ -140,6 +143,7 @@ safe-executor/
 <b>Expected:</b>
 <pre>root:x:0:0:root:/root:/bin/bash
 ...</pre>
+
 
 <h3> File Write Block (read-only filesystem)</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST `
@@ -166,6 +170,7 @@ safe-executor/
 <b>Expected:</b>
 <pre>4</pre>
 </div>
+
 
 <hr>
 
