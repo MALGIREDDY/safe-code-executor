@@ -31,6 +31,7 @@ cd safe-code-executor</pre>
 <h3>Expected server output:</h3>
 <pre>* Running on http://127.0.0.1:5000</pre>
 </div>
+
 ### server output
 ![UI Screenshot](screenshots/screenshot-1.png)
 
