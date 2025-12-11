@@ -68,7 +68,7 @@ safe-executor/
 <pre>Hello World</pre>
 
 ### screenshot 
-![Output Screenshot](screenshots/safe code hello world.png)
+![Output Screenshot](screenshots/safe-code-hello-world.png)
 
 <h3> Test 2 — Python Math</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST -ContentType "application/json" `
