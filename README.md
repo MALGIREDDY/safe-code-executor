@@ -31,6 +31,8 @@ cd safe-code-executor</pre>
 <h3>Expected server output:</h3>
 <pre>* Running on http://127.0.0.1:5000</pre>
 </div>
+### server output
+![UI Screenshot](screenshots/safe code server output.png)
 
 <hr>
 
@@ -65,12 +67,18 @@ safe-executor/
 <b>Expected Output:</b>
 <pre>Hello World</pre>
 
+### screenshot 
+![Output Screenshot](screenshots/safe code hello world.png)
+
 <h3> Test 2 — Python Math</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST -ContentType "application/json" `
 -Body '{"language":"python","code":"x=5+3\nprint(x)"}').output</pre>
 
 <b>Expected Output:</b>
 <pre>8</pre>
+
+### Output screenshot
+![Output Screenshot](screenshots/safe code math execution.png)
 
 <h3> Test 3 — Python Loop</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST -ContentType "application/json" `
@@ -84,6 +92,9 @@ safe-executor/
 4</pre>
 </div>
 
+### Output screenshot
+![Output Screenshot](screenshots/safe code loop output.png)
+
 <hr>
 
 <div class="section">
@@ -96,6 +107,9 @@ safe-executor/
 
 <b>Expected:</b>
 <pre>Execution timed out after 10 seconds</pre>
+
+### Output screenshot
+![Output Screenshot](screenshots/safe code safety exec.png)
 
 <h3> Memory Bomb Attack</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST `
@@ -130,6 +144,9 @@ safe-executor/
 <b>Expected:</b>
 <pre>OSError: [Errno 30] Read-only file system: '/tmp/hack.txt'</pre>
 </div>
+
+### Output screenshots
+![Output Screenshot](screenshots/safe code exec os error.png)
 
 <hr>
 
