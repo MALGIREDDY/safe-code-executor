@@ -144,6 +144,10 @@ safe-executor/
 <pre>root:x:0:0:root:/root:/bin/bash
 ...</pre>
 
+### Output screenshot
+![Output Screenshot](screenshots/screenshot-8.png)
+
+
 
 <h3> File Write Block (read-only filesystem)</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST `
