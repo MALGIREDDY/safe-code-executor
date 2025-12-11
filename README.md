@@ -134,7 +134,6 @@ safe-executor/
 ### Output screenshot
 ![Output Screenshot](screenshots/screenshot-7.png)
 
-
 <h3> Reading /etc/passwd (allowed inside container)</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST `
 -ContentType "application/json" `
@@ -147,8 +146,6 @@ safe-executor/
 ### Output screenshot
 ![Output Screenshot](screenshots/screenshot-8.png)
 
-
-
 <h3> File Write Block (read-only filesystem)</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST `
 -ContentType "application/json" `
@@ -158,7 +155,7 @@ safe-executor/
 <pre>OSError: [Errno 30] Read-only file system: '/tmp/hack.txt'</pre>
 </div>
 
-### Output screenshots
+### Output screenshot
 ![Output Screenshot](screenshots/screenshot-9.png)
 
 <hr>
@@ -174,6 +171,10 @@ safe-executor/
 <b>Expected:</b>
 <pre>4</pre>
 </div>
+
+### Output screenshot
+![Output Screenshot](screenshots/screenshot-10.png)
+
 
 
 <hr>
