@@ -46,9 +46,9 @@ cd safe-code-executor</pre>
 safe-executor/
 │
 ├── app.py                # Flask API backend, runs Docker commands
-├── index.html            # Front-end UI with CodeMirror editor
-├── README.md             # Documentation (HTML version)
-│
+├── index.html            # Front-end UI 
+├── README.md             # Documentation 
+├── screenshots           # screenshots of each and every output 
 ├── venv/                 # Python virtual environment (ignored in Git)
 │
 └── safe-executor-temp/   # Temporary folder where code files are stored before execution
@@ -161,7 +161,7 @@ safe-executor/
 <hr>
 
 <div class="section">
-<h2> 4. JavaScript Support</h2>
+<h2> 4. JavaScript Support  ( BONUS FEATURE )</h2>
 
 <h3> Test — Node.js console.log</h3>
 <pre>(irm http://127.0.0.1:5000/run -Method POST `
@@ -175,29 +175,9 @@ safe-executor/
 ### Output screenshot
 ![Output Screenshot](screenshots/screenshot-10.png)
 
-
-
 <hr>
-
 <div class="section">
-<h2> 5. UI Overview</h2>
-<p>Your UI includes:</p>
-<ul>
-    <li>CodeMirror editor (Python/JS highlight)</li>
-    <li>Language dropdown</li>
-    <li>Run button</li>
-    <li>Output window</li>
-    <li>Execution history (last 10 runs)</li>
-</ul>
-
-<h3>Opening the UI</h3>
-<p>Just open <code>index.html</code> in any browser.</p>
-</div>
-
-<hr>
-
-<div class="section">
-<h2> 6. What I Learned</h2>
+<h2> 5. What I Learned</h2>
 <ul>
     <li>How to safely execute untrusted code</li>
     <li>How Docker prevents system damage</li>
@@ -208,18 +188,6 @@ safe-executor/
 </div>
 
 <hr>
-
-<div class="section">
-<h2> 7. Future Enhancements</h2>
-<ul>
-    <li>More languages (C++, Java, Go, PHP)</li>
-    <li>Run containers as non-root</li>
-    <li>Zip upload for multi-file projects</li>
-    <li>Dark theme / theme switcher</li>
-    <li>Container pooling for faster execution</li>
-</ul>
-</div>
-
 <hr>
 
 <h2> Author</h2>
